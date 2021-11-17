@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<style>
+  a:hover {
+    color: red;
+  }
+
+  [href] {
+    color: saddlebrown;
+    font-weight: normal;
+  }
+
+  div.tbl th {
+    border-right: 3px solid red;
+    padding: 20px;
+  } 
+  div.tbl th:last-child {
+    border-right: 0px;
+  }
+
+  div.divstr div {
+    width: auto;
+    border-right: 3px solid red;
+    padding: 20px;
+    display: inline-block;
+  }
+  div.divstr div:last-child {
+    border-right: 0px;
+  }
+
+  div.spantbl span::after {
+    content: "|";
+    color: red;
+  }
+
+  div.spantbl span:last-child::after {
+    content: " ";
+  }
+
+  div.ptbl p {
+    display: inline-block;
+  }
+
+  div.ptbl p::after {
+    content: "|";
+    color: red;
+  }
+
+  div.ptbl p:last-child::after {
+    content: " ";
+  }
+
+  div.h3tbl h3 {
+    display: inline-block;
+  }
+
+  div.h3tbl h3::after {
+    content: "|";
+    color: red;
+  }
+
+  div.h3tbl h3:last-child::after {
+    content: " ";
+  }
+
+  div.blockquotetbl blockquote {
+    display: inline-block;
+  }
+
+  div.blockquotetbl blockquote::after {
+    content: "|";
+    color: red;
+  }
+
+  div.blockquotetbl blockquote:last-child::after {
+    content: " ";
+  }
+
+  div.atbl a::after {
+    content: "|";
+    color: red;
+  }
+
+  div.atbl a:last-child::after {
+    content: " ";
+  }
+
+  div.litbl li {
+    display: inline-block;
+  }
+
+  div.litbl li::after {
+    content: "|";
+    color: red;
+  }
+
+  div.litbl li:last-child::after {
+    content: " ";
+  }
+
+  div.imgtbl:hover {
+    background-color: red;
+  }
+
+</style>
+
+<body>
+  <!-- 
+  ссылки расположены в ячейках таблицы
+  красные разделители сделаны через рамки таблицы
+  в последней ячейке рамка убрана через 
+  div.tbl th:last-child {
+    border-right: 0px;
+  }
+  -->
+  <div class="tbl">
+    <table>
+      <tr>
+      <th><a href="index.html" title="ссылка 1">первая ссылка</a></th>
+      <th><a href="index.html" title="ссылка 2">вторая ссылка</a></th>
+      <th><a href="index.html" title="ссылка 3">третья ссылка</a></th>
+      <th><a href="index.html" title="ссылка 4">четвертая ссылка</a></th>
+      <th><a href="index.html" title="ссылка 5">пятая ссылка</a></th>
+      </tr>
+      <tr>
+    </table>
+  </div>
+  <!-- 
+  ссылки расположены в div-ах
+  чтобы div-ы разместились в строку, применен display: inline-block;
+  красные разделители рамки div-а
+  в последней ячейке рамка убрана через 
+  div.divstr div:last-child {
+    border-right: 0px;
+  }
+  -->
+  <div class="divstr">
+    <div><a href="index.html" title="ссылка 1">первая ссылка</a></div>
+    <div><a href="index.html" title="ссылка 2">вторая ссылка</a></div>
+    <div><a href="index.html" title="ссылка 3">третья ссылка</a></div>
+    <div><a href="index.html" title="ссылка 4">четвертая ссылка</a></div>
+    <div><a href="index.html" title="ссылка 5">пятая ссылка</a></div>
+  </div>
+  <!-- 
+  ссылки расположены в span-ах
+  красные разделители сделаны через псевдоэлемен after
+  последний разделитель убран через  
+  div.spantbl span:last-child::after {
+    content: " ";
+  }
+  -->
+  <div class="spantbl">
+    <span><a href="index.html" title="ссылка 1">первая ссылка</a></span>
+    <span><a href="index.html" title="ссылка 2">вторая ссылка</a></span>
+    <span><a href="index.html" title="ссылка 3">третья ссылка</a></span>
+    <span><a href="index.html" title="ссылка 4">четвертая ссылка</a></span>
+    <span><a href="index.html" title="ссылка 5">пятая ссылка</a></span>
+  </div>
+  <!-- 
+  ссылки расположены в абзацах
+  красные разделители сделаны через псевдоэлемен after
+  последний разделитель убран через  
+  div.ptbl p:last-child::after {
+    content: " ";
+  }
+  -->
+  <div class="ptbl">
+    <p><a href="index.html" title="ссылка 1">первая ссылка</a></p>
+    <p><a href="index.html" title="ссылка 2">вторая ссылка</a></p>
+    <p><a href="index.html" title="ссылка 3">третья ссылка</a></p>
+    <p><a href="index.html" title="ссылка 4">четвертая ссылка</a></p>
+    <p><a href="index.html" title="ссылка 5">пятая ссылка</a></p>
+  </div>
+  <!-- 
+  ссылки расположены в заголовках
+  красные разделители сделаны через псевдоэлемен after
+  последний разделитель убран через  
+  div.h3tbl h3:last-child::after {
+    content: " ";
+  }
+  -->
+  <div class="h3tbl">
+    <h3><a href="index.html" title="ссылка 1">первая ссылка</a></h3>
+    <h3><a href="index.html" title="ссылка 2">вторая ссылка</a></h3>
+    <h3><a href="index.html" title="ссылка 3">третья ссылка</a></h3>
+    <h3><a href="index.html" title="ссылка 4">четвертая ссылка</a></h3>
+    <h3><a href="index.html" title="ссылка 5">пятая ссылка</a></h3>
+  </div>
+  <!-- 
+  ссылки расположены в blockquote
+  красные разделители сделаны через псевдоэлемен after
+  последний разделитель убран через  
+  div.blockquotetbl blockquote:last-child::after {
+    content: " ";
+  }
+  -->
+  <div class="blockquotetbl">
+    <blockquote><a href="index.html" title="ссылка 1">первая ссылка</a></blockquote>
+    <blockquote><a href="index.html" title="ссылка 2">вторая ссылка</a></blockquote>
+    <blockquote><a href="index.html" title="ссылка 3">третья ссылка</a></blockquote>
+    <blockquote><a href="index.html" title="ссылка 4">четвертая ссылка</a></blockquote>
+    <blockquote><a href="index.html" title="ссылка 5">пятая ссылка</a></blockquote>
+  </div>
+  <!-- 
+  ссылки расположены последовательно друг за другом
+  чтобы div-ы разместились в строку, применен display: inline-block;
+  красные разделители сделаны через псевдоэлемен after
+  последний разделитель убран через  
+  div.atbl a:last-child::after {
+    content: " ";
+  }
+  -->
+  <div class="atbl">
+    <a href="index.html" title="ссылка 1">первая ссылка</a>
+    <a href="index.html" title="ссылка 2">вторая ссылка</a>
+    <a href="index.html" title="ссылка 3">третья ссылка</a>
+    <a href="index.html" title="ссылка 4">четвертая ссылка</a>
+    <a href="index.html" title="ссылка 5">пятая ссылка</a>
+  </div>
+  <!-- 
+  ссылки расположены в списке
+  чтобы список был в строку, применен display: inline-block;
+  красные разделители сделаны через псевдоэлемен after
+  последний разделитель убран через  
+  div.litbl li:last-child::after {
+    content: " ";
+  }
+  -->
+  <div class="litbl">
+    <ul>
+      <li><a href="index.html" title="ссылка 1">первая ссылка</a></li>
+      <li><a href="index.html" title="ссылка 2">вторая ссылка</a></li>
+      <li><a href="index.html" title="ссылка 3">третья ссылка</a></li>
+      <li><a href="index.html" title="ссылка 4">четвертая ссылка</a></li>
+      <li><a href="index.html" title="ссылка 5">пятая ссылка</a></li>
+    </ul>
+  </div>
+</html>
