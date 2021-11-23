@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<style>
+  div.stars {
+    width: auto;
+    padding: 20px;
+  }
+
+  div.star {
+    background: no-repeat center / contain url(star1.png);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+  }
+
+  div.stars:hover div.star {
+    background-image: url(star2.png);
+  }
+
+  div.star:hover ~ div.star 
+  {
+    background-image: url(star1.png);
+  }
+
+</style>
+
+<body>
+  <div class="stars">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
+</body>  
+</html>
