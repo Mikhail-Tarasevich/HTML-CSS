@@ -15,14 +15,15 @@
     background: no-repeat center / contain url(star1.png);
     width: 100px;
     height: 100px;
-    display: inline-block;
+    float: left;
+    padding-right: 10px;
   }
 
-  div.stars:hover div.star {
+  div.stars:hover div.star{
     background-image: url(star2.png);
   }
 
-  div.star:hover ~ div.star 
+  div.star:hover~div.star
   {
     background-image: url(star1.png);
   }

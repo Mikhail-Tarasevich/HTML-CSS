@@ -1,0 +1,107 @@
+.header1 {
+    text-align: center; 
+    padding: 40px; 
+    background-color: aqua; 
+    font-weight: bold; 
+    color: blue; 
+    font-size: larger;
+}
+
+.body1 {
+    background-image: url(background_200_200.gif),url(ball100.png); 
+    background-position: top left, right; 
+    background-repeat: repeat-y,repeat-y;
+}
+
+.menu {
+    width: 200px; 
+    float: left; 
+    font-size: small; 
+    text-align: left; 
+    padding-top: 40px;
+}
+
+.header2 {
+    font-size: initial; 
+    font-weight: bold; 
+    text-align: left; 
+    padding-left: 20px;
+}
+
+.body2 {
+    margin-left: 200px; 
+    padding: 40px 20px;
+}
+
+.header3 {
+    text-align: center; 
+    font-weight: bold;
+}
+
+.body3 {
+    text-align: left; 
+    margin-top: 20px; 
+    min-height: 244px;
+}
+
+.sport1 {
+    padding-right: 20px;
+}
+
+.hor_clear {
+    clear: both;   
+}
+
+.footer {
+    text-align: center; 
+    padding: 40px; 
+    background-color: aqua; 
+    font-weight: bold; 
+    color: blue; 
+    font-size: larger;
+}
+/* планшет */
+@media all and (max-width: 768px) {
+    .body1 {
+        background-image: url(background_200_200.gif); 
+        background-position: top left; 
+        background-repeat: repeat-y;
+    }
+
+    .body2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body3 {
+        display: contents;
+    }
+
+    .sport1 {
+        padding-right: 0;
+    }
+}
+/* узкая */
+@media all and (max-width: 414px) {
+    .header1 {
+        display: none;
+    }   
+
+    .body1 {
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body2 {
+        margin-left: 0; 
+    }
+
+    .body3 img {
+        width: 100%;
+    }
+
+    .footer {
+        display: none;
+    }
+}
