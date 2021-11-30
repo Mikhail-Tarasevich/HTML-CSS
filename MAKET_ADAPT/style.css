@@ -44,6 +44,10 @@
     min-height: 244px;
 }
 
+img.sport1 {
+    float: left;
+}
+
 .sport1 {
     padding-right: 20px;
 }
@@ -59,6 +63,10 @@
     font-weight: bold; 
     color: blue; 
     font-size: larger;
+}
+
+.menu2 {
+    display: none;
 }
 /* планшет */
 @media all and (max-width: 768px) {
@@ -97,11 +105,27 @@
         margin-left: 0; 
     }
 
-    .body3 img {
+    img.sport1 {
         width: 100%;
     }
 
     .footer {
         display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu2 {
+        display: block;
+    }
+
+    ul.menuitem {
+        padding-inline-start: 20px;
+    }
+
+    li {
+        display: inline;
     }
 }
