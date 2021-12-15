@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="form">
+  <div class="block1">
+Для публикации вашей статьи заполните, пожалуйста, следующую форму:
+  </div>
+  <div class="block2">
+    <div class="block2field">
+      <div class="block2_left">
+        Название статьи:
+      </div>
+      <div class="block2_right">
+        <input class="field1" type="text">
+      </div>
+    </div>
+    <div class="block2field">
+      <div class="block2_left">
+        Рубрика:
+      </div>
+      <div class="block2_right">
+        <select name="field2" size="1">
+          <option value="s1">Программирование</option>
+          <option value="s2">Дизайн</option>
+          <option value="s3">Верстка</option>
+         </select>
+      </div>
+    </div>
+    <div class="block2field">
+      <div class="block2_left">
+        Публикация:
+      </div>
+      <div class="block2_right">
+        <div class="radio">
+          <input name="field3" type="radio" value="1">на сайте<Br>
+          <input name="field3" type="radio" value="2">в журнале<Br>
+          <input name="field3" type="radio" value="3">на сайте и журнале<Br>
+        </div>
+      </div>
+    </div>
+    <div class="block2checkbox">
+      <div class="block2_left">
+        Разрешить комментарии:
+      </div>
+      <div class="block2_right">
+        <input class="field4" type="checkbox" checked>
+      </div>
+    </div>
+  </div>
+  <div class="block3">
+    Текст статьи:<br>
+    <div class="block3_textarea">
+      <textarea name="formtext"></textarea>
+      <div class="block3_marginright"></div>
+    </div>
+    <input name="button1" type="button" value="Опубликовать">
+  </div>
+</div>
+</body>
+
+</html>

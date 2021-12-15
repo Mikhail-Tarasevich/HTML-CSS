@@ -1,0 +1,54 @@
+.block2_left {
+    float: left;
+    min-width: 200px;
+    padding-bottom: 5px;
+}
+
+.block2_right {
+    float: none;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.radio {
+    display: inline-flex;
+}
+
+textarea { 
+    width: 100%; 
+}
+
+.block3_marginright {
+    display: flex;   
+}
+
+.field1 {
+    width: 100%; 
+}
+
+.block2field {
+    display: flex;   
+}
+
+.block2checkbox {
+    display: inline-block;
+}
+
+.block1 {
+    padding-bottom: 20px;
+}
+
+/* узкая */
+@media all and (max-width: 414px) {
+    .block2field {
+        display: inline-block;   
+    }   
+
+    .radio {
+        display: inline-block;
+    }
+
+    .block2checkbox {
+        display: inline;
+    }
+}
