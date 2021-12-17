@@ -30,25 +30,22 @@ textarea {
     display: flex;   
 }
 
-.block2checkbox {
-    display: inline-block;
-}
-
 .block1 {
     padding-bottom: 20px;
 }
 
 /* узкая */
-@media all and (max-width: 414px) {
+@media all and (max-width: 600px) {
     .block2field {
-        display: inline-block;   
+        display: block;   
     }   
 
     .radio {
         display: inline-block;
     }
 
-    .block2checkbox {
-        display: inline;
+
+    .block2_right {
+        display: flex;
     }
 }
