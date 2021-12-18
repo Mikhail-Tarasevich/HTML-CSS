@@ -1,0 +1,50 @@
+.block2_ext {
+
+}
+
+.block2_int {
+    border: 1px;
+    position: relative;
+    width: 400px;
+    height: 410px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.biohazard {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.biohazard:hover {
+    z-index: 2;
+}
+
+.Man-and-woman {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.Man-and-woman:hover {
+    z-index: 2;
+}
+
+.Yin_and_Yang {
+    position: absolute;
+    top: 217px;
+    left: 100px;
+}
+
+.Yin_and_Yang:hover {
+    z-index: 2;
+}
+
+.No_smoking {
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 68px;
+}
+
